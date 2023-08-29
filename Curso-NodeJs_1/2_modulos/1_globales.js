@@ -12,8 +12,7 @@ let interval = setInterval(function(){
     console.log("Hola");
 },1000);
 
-
-//ejecuta de forma asincrona en cuanto pueda
+//ejecuta de forma asincrona en cuanto pueda(a diferencia con setTimeOut que primero espera y despues ejecuta este ejecuta de una)
 setImmediate(function(){
     console.log("IMMEDIATE");
 }); 
@@ -27,6 +26,6 @@ console.log(__dirname);
 //acceder a ruta completa de archivo que se esta ejecutando
 console.log(__filename);
 
-//crear variables globales
+//crear variables globales (idealmente no usarlas)
 global.miVariable = "Juan Calvo";
 console.log(miVariable);

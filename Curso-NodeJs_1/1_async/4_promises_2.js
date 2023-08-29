@@ -11,10 +11,10 @@ function hablar(name){
     return new Promise((resolve,reject)=>{
         setTimeout(function(){
             console.log("bla bla bla");
+            // reject('hubo un error rey')
             resolve(name);
         },2000);
-    });
-    
+    });    
 }
 
 function adios(name){
@@ -23,14 +23,14 @@ function adios(name){
             console.log("adios " + name);
             resolve(name);
         }, 2000);
-    });
-    
+    });    
 }
 
 //el uso de las promesas simplifican el anidado de funciones asincronica y el manejo de errores en cualquiera de ellas.
 //si hay error un una, se corta la ejecucion de las siguientes
+//asi evitamos el callbackHell y ordenamos de manera secuencial la ejecucion de funciones asincronicas
 
-console.log("empeza el proceso");
+console.log("empeza la ejecucion del codigo");
 
 hola("Juan")
     .then((name)=>{
@@ -44,6 +44,6 @@ hola("Juan")
         console.error(error);
     });
 
-console.log("termina el proceso");
+console.log("termina la ejecucion del codigo");
 
 //LA CADENA DE PROMESAS NO BLOQUEA LA EJECUCION DEL CODIGO PRINCIPAL

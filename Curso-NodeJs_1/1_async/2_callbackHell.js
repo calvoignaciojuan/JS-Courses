@@ -3,7 +3,6 @@ function hola(name, callback){
         console.log("Hola "+ name);
         callback(name);
     },2000);
-
 }
 
 function hablar(callback){
