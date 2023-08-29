@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <label for="hora">
+            <span>Hora</span>
+            <input type="time" id="hora" name="hora">
+        </label>
+        <br>
+        <label for="dia">
+            <span>Dia</span>
+            <input type="date" name="dia" id="dia">
+        </label>
+        <br>
+        <label for="semana">
+            <span>Semana</span>
+            <input type="week" name="semana" id="semana">
+        </label>
+        <br>
+        <label for="mes">
+            <span>Mes</span>
+            <input type="month" name="mes" id="mes">
+        </label>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <span>OTRA FORMA DE CALENDARIO</span>
+    <br>
+    <br>
+    <br>
+
+    <form action="">
+        <label for="calendario">
+            <span>Eligir dia y hora</span>
+            <input type="datetime-local" name="calendario" id="calendario">
+        </label>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <span>Required and autocomplete</span>
+    <br>
+    <br>
+    <br>
+
+    <form action="">
+        <label for="nombre">
+            <span>Nombre</span>
+            <input type="text" id="nombre" name="nombre" autocomplete="on" required>
+        </label>  <br>
+
+        <label for="email">
+            <span>Email</span>
+            <input type="email" id="email" name="email" autocomplete="on" required>
+        </label>  <br>
+
+        <label for="pais">
+            <span>Pais</span>
+            <input type="pais" name="pais" id="pais" autocomplete="on" required>
+        </label>  <br>
+
+        <label for="cp">
+            <span>Codigo postal</span>
+            <input type="text" name="cp" id="cp" autocomplete="on" required>
+        </label>  <br>  <br>
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            width: 100%;          
+            justify-content: center;
+        }
+        section .card{
+            width: 500px;
+            height: 900px;
+            background-color: aqua;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        .card img{
+            width: 100%;
+            
+        }
+        
+
+        #dogimg{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            position: absolute;
+            left:55%;
+            top: 50px;
+        }
+        #description {
+            height:auto;
+            display: flex;                 
+            justify-content: space-evenly;            
+            background-color: papayawhip;          
+        }
+
+        #description div{     
+           display: flex;  
+           flex-direction: column;        
+           width: 50%;         
+           /* border: 1px solid black;  */
+           font-style: italic;  
+           justify-content: left;  
+          
+        }
+        #description div p{
+            font-size: 16px;
+            padding: 2px;
+            margin: 0;
+            border: 0.5px solid black;
+        }
+        .foot{
+            display: flex;
+            background-color: darkcyan;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/10909254/pexels-photo-10909254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="man">
+            <img id="dogimg" src="https://images.pexels.com/photos/1454769/pexels-photo-1454769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="dog">
+            <div id="description">
+                <div class="left">
+                    <p>Descripcion: un hombre guapo</p>   
+                    <p>trabaja mucho</p>                   
+                </div>
+                <div class="right">
+                    <p>Hobbie: ser guapo</p>
+                    <p>blablablalbalbal</p>
+                </div>  
+            </div>
+            <div class="foot">
+                
+                <p>El es el elegido</p>  
+            </div>
+        </div>
+        
+
+    </section>
+</body>
+</html>

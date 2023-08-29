@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+         :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+            --card-size: 240px;
+        }
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .main-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            place-content:  end;
+            position: relative;           
+        }
+        .menu-icon{
+            height: 40px;
+            width: 40px;
+            margin: 15px;
+            display: none;
+        }
+            .order-container{
+                width: 500px;  
+                height: 100vh;
+                border: 1px solid var(--very-light-pink);
+                display: flex;
+                flex-direction: column;
+                padding: 20px;   
+            }
+            .order-container .top{
+                display: flex;
+                align-items: center;
+
+            }
+            .back-arrow{
+                transform: rotate(180deg);
+                margin-right: 15px;
+                height: 20px;
+                width: 20px;
+            }
+                   
+            
+            .product-list-container{
+                display: flex;
+                flex-direction: column;
+                padding: 15px 0px 15px 0px;
+            }
+
+                .product-list-container img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;  
+                    border-radius: 10px;  
+                }
+                .product-card{
+                    display: flex;
+                    padding: 10px 0px 10px 0px;
+                }
+                .product-card .description{
+                    width: 50%;
+                    display: flex;
+                    align-content: center;
+                    
+                }
+                .product-card .description p{
+                    padding: 0px 0px 0px 20px;
+                    align-self: center;
+                    color: var(--very-light-pink);
+                }
+                .product-card .price{
+                    display: flex;
+                    width: 50%; 
+                    justify-content: end;  
+                    align-items: center;
+                    font-size: var(--black);
+                    font-weight: bold;
+                }
+                .product-card .price p {
+                    align-self: center;
+                    font-size: var(--lg);
+                } 
+
+                .product-card .price img{
+                    width: 20px;
+                    height:20px;
+                    margin-left: 30px;
+                }
+            
+            .total-container{
+                height: 100px;
+                background-color:var(--text-input-field);
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 15px 5px 15px;
+            }
+                .total-left{
+                    font-size: var(--lg);
+                    font-weight: bold;
+                }
+
+            .primary-button{
+                /* display: flex;
+                justify-content: center;
+                align-items: center; */
+                font-family: 'Quicksand', sans-serif;
+                color: var(--white);
+                font-size: var(--lg);
+                font-weight: bold;
+                border: none;
+                border-radius: 6px;
+                height: 64px;
+                background-color: var(--hospital-green);
+                margin-bottom: 32px;
+                cursor: pointer;
+                margin: 20px;
+            }
+        @media (max-width:640px) {
+            .menu-icon{
+                display: block;
+            }
+            .back-arrow{
+                display: none;
+            }
+            .order-container{
+                width:100%;
+            }
+            .top{
+                justify-content: end;
+            }
+            h1{               
+                flex-grow:1;
+                /* padding-left: 60px; */
+               text-align: center;
+            }
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="order-container">
+           
+            <div class="top">
+                <img class="menu-icon" src="./icons/icon_menu.svg" alt="menu">
+                <img class="back-arrow"src="./icons/flechita.svg" alt="arrow">
+                <h1>Shopping cart</h1>
+            </div>         
+
+        
+            <div class="product-list-container">
+    
+                <div class="product-card">
+                    <div class="description">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+                        <p>Bike Vairo</p>
+                    </div>
+                    <div class="price">
+                        <p>$120.00</p>
+                        <img src="./icons/icon_close.png" alt="cross">
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="description">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+                        <p>Bike Vairo</p>
+                    </div>
+                    <div class="price">
+                        <p>$120.00</p>
+                        <img src="./icons/icon_close.png" alt="cross">
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="description">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+                        <p>Bike Vairo</p>
+                    </div>
+                    <div class="price">
+                        <p>$120.00</p>
+                        <img src="./icons/icon_close.png" alt="cross">
+                    </div>
+                </div>
+    
+                <div class="product-card">
+                    <div class="description">
+                        <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+                        <p>Bike Vairo</p>
+                    </div>
+                    <div class="price">
+                        <p>$120.00</p>
+                        <img src="./icons/icon_close.png" alt="cross">
+                    </div>
+                </div>   
+               
+    
+            </div>
+            <div class="total-container">
+                <div class="total-left">
+                    <p>Total</p>
+                </div>
+                <div class="total-right">
+                    <p>$560.00</p>
+                </div>
+              
+            </div>
+            <button class="primary-button">
+                <p>Checkout</p>
+            </button>
+        </div>
+       
+    </div>
+    
+</body>
+</html>

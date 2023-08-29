@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+         :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        /* html{
+            width: 100%;
+        } */
+
+        .nav-bar{
+            height:80px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            align-content: center;
+            place-items: center;
+            justify-content: space-between;            
+            border-bottom: 1px solid var(--hospital-green);
+        }
+        .left-container{
+            display:flex;
+            align-items: center;
+        }
+        .left-container .menu-icon{
+            margin: 20px;
+            display: none;
+        }
+        .left-container .main-logo{
+            height: 40px;
+            margin: 0px 60px 0px 60px;
+        }
+        .left-container .categories-list{
+            display: flex;          
+        }
+
+        .left-container .categories-list li{
+            margin: 10px;
+            border: 1px solid var(--white);           
+            border-radius: 10px;
+            text-align: center;
+        }   
+        .left-container .categories-list li:hover{
+                border: 1px solid var(--hospital-green);
+            }  
+
+        .left-container .categories-list a{
+            display: inline-block;          
+            text-align: center;
+            font-weight: bold;
+            font-size: var(--lg);
+            color: var(--hospital-green);
+        
+            margin: 8px 15px 8px 15px;
+          
+        }
+        .right-container ul{
+            display: flex;
+            align-content: center;
+            margin-right: 40px;
+        }
+        .right-container ul a{          
+            align-self: center;
+            font-size: var(--lg);
+            color: var(--very-light-pink);
+            margin-right: 10px;
+        }
+
+        .flechita{
+            rotate: 90deg;
+        }
+
+        .right-container li{
+            display: flex;
+            margin: 10px 20px 10px 20px;
+        }
+
+        .right-container ul li:nth-child(2){
+            position: relative;
+        } 
+        .cart-icon{
+            height: 40px;
+            width: 40px;
+        }
+        .notification-num{
+            
+            margin:0px;
+            font-size: var(--sm);
+            font-weight: bold;
+            width: 20px;
+            height: 20px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            text-align: center;    
+            position: absolute;        
+            top: -10px;
+            left: 30px;
+        }
+
+        @media (max-width:640px) {
+            .left-container .main-logo{
+                height: 40px;
+                margin: 0px 60px 0px 100px;
+            }
+           
+            .left-container .menu-icon{
+                display: block;
+             }
+             .left-container .categories-list{
+                display: none;            
+            }
+            .email,
+            .flechita{
+                display: none;
+            }       
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="left-container">
+            <img class="menu-icon" src="./icons/icon_menu.svg" alt="Menu">
+            <img src="./logos/logo_yard_sale.svg" alt="logo" class="main-logo">
+            <ul class="categories-list">
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Clothes</a>
+                </li>
+                <li>
+                    <a href="">Electronics</a>
+                </li>
+                <li>
+                    <a href="">Furniture</a>
+                </li>
+                <li>
+                    <a href="">Toys</a>
+                </li>
+                <li>
+                    <a href="">Others</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right-container">
+            <ul>
+                <li>
+                    <a class="email" href="">camilayokoo@gmail.com</a>
+                    <a href=""><img class ="flechita" src="./icons/flechita.svg" alt="flechita"></a>                 
+                    
+                </li>
+                <li>
+                    <img class="cart-icon"src="./icons/icon_shopping_cart.svg" alt="cart">
+                    <p class="notification-num">2</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>

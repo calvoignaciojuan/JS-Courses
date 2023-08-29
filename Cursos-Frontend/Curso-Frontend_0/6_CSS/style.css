@@ -1,0 +1,16 @@
+/* selector por elemento */
+h1{
+    color: red;
+}
+
+/* Selector por id */
+#par1{
+    color: blue;
+    font-size:45px;
+}
+
+/* Selector por clase */
+.span1{
+    color: yellow;
+    font-size: 45px;
+}

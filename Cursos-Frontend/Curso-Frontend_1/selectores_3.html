@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p {
+            color: palevioletred;
+        }
+        
+        p::before{
+            content: "+";
+        }
+        p:hover::before{
+            content: "-->";
+        }
+
+        p:hover{
+            background-color: darkgreen;
+        }
+
+        p:active{
+            background-color: blue;
+        }
+       
+
+        p:nth-child(2){
+            background-color: blue;
+        }
+        p::first-letter{
+            color: brown;
+        }
+       
+        ::placeholder{
+            color: chartreuse;
+        }
+
+        button {
+            color: #1a73e8;
+        }
+
+        button:active {
+            color: #1557ad;
+        }
+
+        .nombreclase p{
+            color: red
+        }
+    </style>
+
+</head>
+<body>
+    <p>Hola</p>
+    <div>
+        <p>que</p>
+        <p>tal</p>
+        <p>te va</p>
+    </div>
+    
+
+    <div class="nombreclase" id="nombreId">
+        <p>Hola que tal, probando selectores</p>
+    </div>
+
+
+    <label for="nombre">Completar nombre</label>
+    <input type="text" id="nombre" placeholder="name">
+    <button>guardar</button>
+</body>
+</html>

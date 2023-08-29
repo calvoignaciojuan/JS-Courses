@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 6.25%;
+}
+
+/* body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+} */
+
+.header{
+    height: 10vh;
+    background-color: aqua;
+    /* text-align: center; */
+}
+
+.logo{
+    height: 60rem;
+    width: 60rem;
+    margin-left: 10rem;
+}
+
+.nav{
+    position: absolute;
+    right: 20rem;
+    top: 20rem;
+    margin-left: 50vw;
+    font-size: 24rem;
+    height: 40rem;
+    list-style: none;
+    display: inline-block;
+   
+}
+.nav ul{
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+}
+.nav li{
+    display: inline-block;
+    padding: 16rem;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.aside{
+    height:  85vh;
+    width: 10vw;
+    background-color: blueviolet;
+    font-size: 16rem;
+    display: inline-block;
+}
+
+.aside__item{
+    width: calc(100% - 4rem);
+    height: calc(25% - 4rem);
+    margin: 2rem;
+    border: black solid 2rem;
+    border-radius: 10rem;
+}
+
+.mainArea{
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+    width: 90vw;
+    height: 85vh;
+    background-color: cadetblue;
+    /* display: inline-block; */
+    font-size: 20rem;
+}
+
+.footer{
+    height: 5vh ;
+    width: 100vw;
+    background-color: blue;
+    font-size: 24rem;
+    display: inline-block;
+}
+
+.footer p {
+    margin-top: 12rem;
+    margin-left: 10rem;
+    display: inline-block;
+}
+.footer p:last-child{
+    margin-left: 80%;
+}

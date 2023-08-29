@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select and list</title>
+</head>
+<body>
+    <main>
+        <h1>Select - "Mala practica"</h1>
+        <form action="">
+            <select name="opcion" id="opcion">
+                <option value="Javascript">Javascript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="Python">Python</option>
+                <option value="GO">GO</option>
+            </select>
+            <input type="submit" value="ENVIAR">
+            <br> <br>
+        </form>
+        <br><br>
+
+        <h1>List - Mejor practica(deja filtrar)</h1>
+        <form action="">
+            <input list="Cursos" name="CursoElegido"/>
+                <datalist id="Cursos">  
+                    <option value="Javascript"></option>
+                    <option value="HTML5"></option>
+                    <option value="Python"></option>
+                    <option value="GO"></option>
+                </datalist>     
+    
+            <br><br>
+            <input type="submit" value="ENVIAR">
+        </form>
+
+    </main>
+
+
+</body>
+</html>

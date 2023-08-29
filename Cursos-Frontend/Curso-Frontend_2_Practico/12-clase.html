@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+         :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm:14px;
+            --md:16px;
+            --lg:18px;
+        }
+        body{
+            margin: 0px;
+            font-family: 'Quicksand', sans-serif;
+        }
+       
+        .product-detail{
+            width: 450px;
+            height: 100%;
+            display: flex ;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+        }
+        .image-container{
+            width: 100%;
+            height: 450px;
+            position: relative;
+        }
+        .product-image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0px 0px 10px 20px;
+        }
+        .close-container {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: var(--white);
+            position: absolute;
+            top:10px;
+            left: 10px;          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;               
+        }
+        .close-container img {
+            height: 20px;
+            width: 20px;           
+        }
+        .product-price{
+            margin: 20px 0px 2px 20px;
+            font-weight: bold;
+        }
+        .product-name{
+            margin: 5px 0px 15px 20px;
+            color: var(--very-light-pink);
+        }
+        .product-description{
+            margin: 5px 0px 2px 20px;
+            color: var(--very-light-pink);
+        }
+
+        .primary-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--white);
+            font-size: var(--lg);
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            height: 64px;
+            background-color: var(--hospital-green);
+            margin-bottom: 32px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        .cart-icon{
+            padding: 10px;
+        }
+        @media (max-width:640px) {
+            .product-detail{
+                width: 100%;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <aside class="product-detail">
+            <div class="image-container">
+                <img class="product-image"src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="product">
+                <div class="close-container">
+                    <img src="./icons/icon_close.png" alt="cross" >
+                </div>                
+            </div>            
+            <p class="product-price">$120,00</p>
+            <p class="product-name">Bike Vairo</p>
+            <p class="product-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ex voluptatibus nobis aliquam ut repellendus, minima, veritatis nam cumque recusandae quis labore eius quas suscipit necessitatibus cupiditate tenetur accusantium sed?</p>
+            <button class="primary-button">
+                <img class="cart-icon" src="./icons/bt_add_to_cart.svg" alt="cart">
+                <p>Add to cart</p>
+            </button>
+           
+        </aside>
+    </div>
+    
+</body>
+</html>

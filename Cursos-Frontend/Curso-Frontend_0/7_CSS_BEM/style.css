@@ -1,0 +1,46 @@
+.main-nav{
+    list-style: none;
+    padding: 0px;
+    background-color: aqua;
+}
+
+.main-nav__item{
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;   
+}
+
+.main-nav__item a{
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-nav__item a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.main-nav__item a::after{
+    content: " | ";
+}
+.main-nav__item a::before{
+    content: " | ";
+}
+
+/*Algunos Pseudo-classes:*/
+/* :root{}
+//representa elemento HTML, con la especificidad de clase //usado para anidar variables CSS
+:active
+//se activa al hacer clic down
+:visited
+//cambio visual cuando se visita un enlace
+:hover
+//permite cambiar el estado de un elemento cuando elmause se sobrepone sobre él
+:first-child // para afectar solo al primer hijo // se coloca en el padre (ul) para afectar a su primer hijo (li)
+:last-child // para afectar solo al ultimo hijo
+:not  //negar una codiciones (ignorar una condicion) //ejemplo .clase:not(last-child)
+//afecto a todos menos el ultimo
+:empty 
+//ayuda a detectar cuando un elemento esta vacio. //ejemplo .class:empty{background:yellow;} //resaltar
+:nth-child() 
+// tag:nth-child(2){} //afectara al segundo elemento */

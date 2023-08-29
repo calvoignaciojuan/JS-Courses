@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 6.25%;
+}
+
+:root{
+    --font-main:40rem; 
+    --font-medium:30rem;
+    --font-small:20rem
+}
+
+body{
+    font-size: var(--font-main);
+}
+
+.header{
+    height: 10vh;
+    background-color: cadetblue;
+    font-size: var(--font-small);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    margin-left: 20rem;
+}
+
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li{
+    margin: 16rem;
+}
+
+.main-content-container{
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+}
+
+.aside-container{
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20vw;
+}
+
+.aside-item{
+    height: calc(25% - 10rem);
+    width: calc(100% - 10rem);
+    border: black solid 4rem;
+    border-radius: 6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+.main-container{
+    width: 80vw;
+    background-color: brown;
+    flex-grow: 1;
+}
+
+
+.footer-container{
+    height: 10vh;
+    width: 100vw;
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-medium);
+}
+
+.footer-container p{
+    margin: 10rem;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .maincontainer{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .card{
+            position:relative;
+            display: flex;
+            height: 800px;
+            width: 500px;
+            justify-content: center;
+          
+        }
+        .nameandlogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            height: 350px;
+            background-color: aqua;
+            border-radius: 30px;
+            z-index: 1;
+        }
+        .nameandlogo img{
+            width: 53%;
+            height: 60%;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        .nameandlogo :nth-child(2){
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            margin: 0;
+        }
+        .card .backdata{
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+            height: 700px;
+            width: 460px;
+            left: 20px;
+            top: 20px;
+            border-radius: 30px;
+            background-color: white;
+            z-index: 0;
+        }
+        .backdata .blank{
+            height: 40%;
+        }
+        .backdata .personaldata{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 60%;
+        }
+        .personaldata div{
+            display: flex; 
+            justify-content: left;
+            align-content: center;
+            box-sizing: border-box;
+            /* width: 100%;
+            height: 20px; */
+            position: relative;
+            left: 50px;
+            padding: 4px;
+            font-size: xx-large;
+        }
+
+        .personaldata img{
+            height: 50px;
+            width:  50px;
+            border-radius: 50;
+            padding: 8px;
+        }
+      
+        .personaldata section{
+            height: 50px;
+            padding: 8px;
+         
+        }
+        .socialmedia{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 660px;
+            width: 90%;
+            height: 140px;
+            background-color: aqua;
+            border-radius: 30px;
+            z-index: 2;
+        }
+        .socialmedia img{
+            height: 70px;
+            width:  70px;
+            border-radius: 30px;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="card">
+            <div class="nameandlogo">
+                <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="profile photo">
+                <p>John Doe</p>
+                <p>Movile app developer</p>
+            </div>
+            <div class="backdata">
+                <div class="blank">
+                    
+                </div>
+                <div class="personaldata">
+                    <div> 
+                        <img src="https://w7.pngwing.com/pngs/759/922/png-transparent-telephone-logo-iphone-telephone-call-smartphone-phone-electronics-text-trademark-thumbnail.png" alt="phonelogo">
+                        <section class="number">+954 1122392925</section>
+                    </div>
+                    <div>
+                        <img src="https://thumbs.dreamstime.com/b/high-quality-dark-blue-flat-letter-mail-message-icon-high-quality-dark-blue-flat-letter-mail-message-icon-pictogram-icon-set-192694405.jpg" alt="emaillogo">
+                        <section class="mail">sarasa@gmail.com</section>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDMJn--bDSBzRAGiz_2O5QtAMsCo34KN3qiIYrlF4&s" alt="worldLogo">
+                        <section class="web">mipropiaweb.com.ar</section>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+            <div class="socialmedia">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/800px-Facebook_f_logo_%282021%29.svg.png" alt="facebooklogo">
+                <img src="https://www.kindpng.com/picc/m/119-1195063_twitter-icon-size-2017-hd-png-download.png" alt="twitterlogo">
+                <img src="https://thumbs.dreamstime.com/b/new-instagram-camera-logo-icon-vector-modern-gradient-design-illustrations-white-background-new-instagram-camera-logo-icon-136839821.jpg" alt="instagramlogo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/800px-LinkedIn_icon.svg.png" alt="linkedinglogo">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
